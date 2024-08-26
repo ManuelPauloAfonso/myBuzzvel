@@ -79,14 +79,28 @@ const Project = () => {
     <div className="flex justify-center mt-20">
       <Container>
         <h2 className="font-bold text-center text-3xl">
-          Destaque Projetos da Buzzvel
+          Highlight Buzzvel Projects
         </h2>
         <Swiper
           modules={[EffectCoverflow, Pagination]}
           effect={"coverflow"}
           loop={true}
-          spaceBetween={30}
-          slidesPerView={3}
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 40,
+            },
+          }}
           pagination={{
             clickable: true,
           }}
@@ -105,7 +119,7 @@ const Project = () => {
                 className="project-slide mt-5 bg-white rounded-lg shadow-md overflow-hidden p-6"
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: item.id * 0.1 }} // animação com delay
+                transition={{ duration: 0.5, delay: item.id * 0.1 }}
               >
                 <Image
                   src={imgCardProject}

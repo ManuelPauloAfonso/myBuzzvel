@@ -5,20 +5,20 @@ import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
-    <div className="flex justify-center mt-20 items-center">
+    <section id="about" className="flex justify-center mt-20 items-center px-4">
       <Container>
         <motion.div
-          className="flex justify-center gap-8 items-center"
+          className="flex flex-col md:flex-row justify-center items-start md:items-center gap-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <div>
-            <h1 className="text-5xl font-bold leading-tight">
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               Welcome! <br />
               I&apos;m Manuel Afonso, a Front-End Developer
             </h1>
-            <p className="mt-10 text-lg text-[#A8A8A8]">
+            <p className="mt-6 md:mt-10 text-md md:text-lg text-[#A8A8A8]">
               Passionate front-end developer with a keen eye for detail and a
               commitment to delivering the highest quality. Proud of my work, I
               continuously strive for self-improvement with each project. My
@@ -40,7 +40,7 @@ const Banner = () => {
           </div>
         </motion.div>
       </Container>
-    </div>
+    </section>
   );
 };
 

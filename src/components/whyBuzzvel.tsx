@@ -1,8 +1,9 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Container from "./container";
 import { dataFaQ } from "@/data/dataFaQ";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 export default function FAQAccordion() {
   const [expanded, setExpanded] = useState(null);
@@ -45,21 +46,25 @@ export default function FAQAccordion() {
                 <motion.div
                   animate={{ rotate: expanded === item.id ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
-                  className="text-[#FF9142]"
+                  className="text-[#FF9142] cursor-pointer"
                 >
-                  ⌄
+                  <ChevronDownIcon className="w-6 h-6 cursor-pointer" />
                 </motion.div>
               </div>
-              {expanded === item.id && (
-                <motion.div
-                  initial={{ height: 0, opacity: 0 }}
-                  animate={{ height: "auto", opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  className="p-4 bg-white"
-                >
-                  <p>{item.content}</p>
-                </motion.div>
-              )}
+              <AnimatePresence initial={false}>
+                {expanded === item.id && (
+                  <motion.div
+                    key="content"
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className="p-4 bg-white"
+                  >
+                    <p>{item.content}</p>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </div>
           ))}
         </motion.div>

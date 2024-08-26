@@ -2,27 +2,27 @@ export const dataFaQ = {
   accordionItems: [
     {
       id: 1,
-      title: "Oportunidades de Crescimento",
+      title: "Growth Opportunities",
       content:
-        "Na Buzzvel, cada dia é uma nova chance de se desenvolver. Com um ambiente que valoriza o aprendizado contínuo, você terá o suporte necessário para crescer tanto profissionalmente quanto pessoalmente.",
+        "At Buzzvel, every day is a new chance to develop. With an environment that values continuous learning, you will have the support needed to grow both professionally and personally.",
     },
     {
       id: 2,
-      title: "Ambiente de Trabalho Colaborativo",
+      title: "Collaborative Work Environment",
       content:
-        "Fazer parte da Buzzvel é integrar uma equipe unida e inclusiva, onde a colaboração é a chave para o sucesso coletivo. Aqui, todos têm voz, e o aprendizado mútuo é uma constante.",
+        "Being a part of Buzzvel means joining a united and inclusive team where collaboration is the key to collective success. Here, everyone has a voice, and mutual learning is a constant.",
     },
     {
       id: 3,
-      title: "Inovação e Criatividade",
+      title: "Innovation and Creativity",
       content:
-        "A Buzzvel é movida pela inovação e pela criatividade. Incentivamos nossos colaboradores a explorar novas ideias e soluções, criando um espaço onde a originalidade é sempre bem-vinda.",
+        "Buzzvel is driven by innovation and creativity. We encourage our team members to explore new ideas and solutions, creating a space where originality is always welcome.",
     },
     {
       id: 4,
-      title: "Projetos Desafiadores",
+      title: "Challenging Projects",
       content:
-        "Trabalhar na Buzzvel significa enfrentar projetos que desafiam o status quo. Cada tarefa é uma oportunidade de impactar positivamente o mercado e fazer a diferença.",
+        "Working at Buzzvel means tackling projects that challenge the status quo. Each task is an opportunity to make a positive impact on the market and make a difference.",
     },
   ],
 };
