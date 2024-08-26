@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import GradientFull from "@/components/gradientFull";
 
-const inter = Montserrat({ subsets: ["latin"] });
+const inter = Montserrat({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "My Project Portfolio",
