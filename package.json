@@ -28,7 +28,7 @@
     "@cypress/webpack-dev-server": "^3.10.1",
     "@testing-library/cypress": "^10.0.2",
     "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/react": "^17.0.80",
     "@types/react-dom": "^18",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "ajv": "^8.17.1",
